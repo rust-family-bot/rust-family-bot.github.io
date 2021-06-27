@@ -3,7 +3,7 @@ layout: post
 title:  "roblas 开发准备"
 date:   2021-06-27 02:56:53 +0800
 categories: [roblas]
-tags: [roblas]
+tags: [roblas, rust]
 ---
 
 # roblas 开发准备
