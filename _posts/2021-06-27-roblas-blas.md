@@ -62,8 +62,8 @@ LAPACK （linear algebra package），是著名的线性代数库，也是 Netli
 
 下面是一些相关链接：
 
-* netlib 实现的 blas 库：http://netlib.org/blas/
-* atlas 库：[https://www.netlib.org/atlas/](https://www.netlib.org/atlas/)
+* netlib 实现的 blas 库：[http://netlib.org/blas/](http://netlib.org/blas/)
+* atlas 库：[http://www.netlib.org/atlas/](http://www.netlib.org/atlas/)
 * lapack 库：[http://www.netlib.org/lapack/](http://www.netlib.org/lapack/)
 
 
@@ -71,6 +71,10 @@ LAPACK （linear algebra package），是著名的线性代数库，也是 Netli
 ## roblas 实现参考
 
 目前的计划，是依照 netlib 的 cblas 库进行初版 roblas 的实现，即函数名需要遵守 c 规范，可能考虑后续与 c 进行链接测试。
+
+netlib 中关于 blas 的使用文档非常的粪坑，因此在此找到了两个较好的文档：[https://www.hpc.nec/documents/sdk/SDK_NLC/UsersGuide/blas/f/en/index.html](https://www.hpc.nec/documents/sdk/SDK_NLC/UsersGuide/blas/f/en/index.html)
+
+[https://spec.oneapi.com/versions/0.7/elements/oneMKL/source/domains/blas/blas.html#onemkl-blas](https://spec.oneapi.com/versions/0.7/elements/oneMKL/source/domains/blas/blas.html#onemkl-blas)
 
 平台相关的优化，预计在明年再实现。
 
