@@ -50,10 +50,21 @@ roblas 也同时附有测试框架：
 cargo test
 ```
 
-得益于 rust 的 doc 机制，输入下面命令，可以生成 doc 网页：
+得益于 rust 的 doc 机制，Linux 下输入下面命令，可以生成 doc 网页：
 
 ```sh
 RUSTDOCFLAGS="--html-in-header doc/math-header.html" cargo doc --no-deps --open
+```
+
+如果是 Windows，则在 powershell 或者 cmd 中输入：
+
+```powershell
+# 更新环境变量（powershell），一次 session 执行一次
+$env:RUSTDOCFLAGS="--html-in-header doc\math-header.html" 
+# 更新环境变量（cmd），一次 session 执行一次
+#set RUSTDOCFLAGS="--html-in-header doc\math-header.html" 
+# 生成并打开 doc 网页
+cargo doc --no-deps --open
 ```
 
 目前的 doc 生成过程中，通过引入 `doc/math-header.html` ，使得 docstring 中可以加入 markdown 格式的数学公式，例如 $\hat{x} \to \alpha \cdot \hat{x}$。
